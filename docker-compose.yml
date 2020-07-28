@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    network_mode: bridge
+    build:
+        context: .
+    restart: always
+    ports:
+        - '0:9991'
+    volumes:
+        - ./logs/:/var/log/
