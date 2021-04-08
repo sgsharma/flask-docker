@@ -6,6 +6,6 @@ services:
         context: .
     restart: always
     ports:
-        - '0:9991'
+        - '5000:9991'
     volumes:
         - ./logs/:/var/log/
